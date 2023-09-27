@@ -1,0 +1,7 @@
+# creation rules are evaluated sequentially, the first match wins
+creation_rules:
+  - path_regex: \.dev\.json$
+    azure_keyvault: 'https://sops-demo-kv.vault.azure.net/keys/dev-key/35c7df3702d44165b7fecc29b986040c'
+
+  - path_regex: \.prod\.json$
+    azure_keyvault: 'https://sops-demo-kv.vault.azure.net/keys/prod-key/9343908407544046987db14d624591fe'
